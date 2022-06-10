@@ -7,7 +7,7 @@ import barcode
 from barcode.writer import ImageWriter
 import os
 
-# Change directory:
+# Change to specific output directory:
 p = 'C:\\Users\\name\\output'
 os.chdir(p)
 
@@ -16,4 +16,4 @@ BCODE = barcode.get_barcode_class('code39')
 my_code39 = BCODE(identifier, writer=ImageWriter())
 file = my_code39.save(identifier)
 
-print(file) # Print file name, file will be saved as PNG 
+print(file) # Print file name, file will be saved as PNG
