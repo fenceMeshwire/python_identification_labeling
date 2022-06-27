@@ -2,7 +2,7 @@
 
 # Python 3.9.5
 
-# 01_create_barcode_ean13.py
+# 02_create_barcode_ean13.py
 
 import barcode
 from barcode.writer import ImageWriter
