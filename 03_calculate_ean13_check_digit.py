@@ -14,7 +14,7 @@ def calc_ean13_check_digit(identifier):
     for number in reversed_identifier:
         if counter // 2 != 0:
             odd_sum = odd_sum + int(number) * 3
-        if counter //2 == 0:
+        if counter // 2 == 0:
             even_sum = even_sum + int(number) * 1
         counter += 1
         
