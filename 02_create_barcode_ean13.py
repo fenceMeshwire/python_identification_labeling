@@ -8,7 +8,7 @@ import barcode
 from barcode.writer import ImageWriter
 import os
 
-# Change to specific output directory:
+# Change directory to specific output directory:
 p = 'C:\\Users\\name\\output'
 os.chdir(p)
 
