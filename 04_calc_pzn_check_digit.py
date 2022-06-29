@@ -2,7 +2,7 @@
 
 # Python 3.9.5
 
-# 04_calc_pzn_check_digit.py
+# 03_calc_pzn_check_digit.py.py
 
 # The Pharmacy Central Number (PZN) is a nationally standardized 
 # identification code in Germany for pharmaceuticals, medical devices 
@@ -25,13 +25,14 @@ def calc_pzn_check_digit(identifier):
         check_digit = None
         full_identifier = identifier
     else:
-        full_identifier = '0' + identifier + str(check_digit)
+        full_identifier = identifier + str(check_digit)
     return full_identifier, check_digit
 
 if __name__ == '__main__':
     # The full identifier is often specified as follows: 08906763
-    identifier = '08906763' 
-    identifier = identifier[1:-1:1]
+    # Enter the data without the leading '0':
+    identifier = '8906763'
+    identifier = identifier[0:-1:1]
     full_identifier, check_digit = calc_pzn_check_digit(identifier)
     if not check_digit == None:
         print('PZN full identifier: ' + str(full_identifier))
