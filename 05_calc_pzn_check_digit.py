@@ -2,11 +2,7 @@
 
 # Python 3.9.5
 
-# 03_calc_pzn_check_digit.py.py
-
-# The Pharmacy Central Number (PZN) is a nationally standardized 
-# identification code in Germany for pharmaceuticals, medical devices 
-# and other products commonly sold in pharmacies.
+# 05_calc_pzn_check_digit.py
 
 def calc_pzn_check_digit(identifier):
     counter:int = 1
