@@ -2,7 +2,7 @@
 
 # Python 3.9.5
 
-# 04_create_pzn_barcode.py
+# 04_create_barcode_pzn.py
 
 # The Pharmacy Central Number (PZN) is a nationally standardized 
 # identification code in Germany for pharmaceuticals, medical devices 
