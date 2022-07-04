@@ -25,7 +25,7 @@ def calculate_check_digit(vin):
 
   if len(vin) == 17:
     plausibility = True
-  if len(vin) < 17:
+  elif len(vin) < 17:
     plausibility = False
     return
   elif len(vin) > 17:
