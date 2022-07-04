@@ -44,6 +44,7 @@ def calculate_check_digit(vin):
 
   position = 0
   total = 0
+  
   for digit in vin:
     assigned_value = assigned_values.get(digit)
     position += 1
@@ -57,6 +58,7 @@ def calculate_check_digit(vin):
   check_digit = check_digit - int(check_digit)
   check_digit = "%.3f" % check_digit
   result = check_digits.get(check_digit)
+  
   return result, plausibility
 
 if __name__ == '__main__':
